@@ -1,1 +1,4 @@
 # asim
+
+## Required packages:
+openai

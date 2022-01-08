@@ -16,9 +16,11 @@ root.geometry("550x750")
 v1 = pdf.ShowPdf()
 
 # Adding pdf location and width and height.
+path = r"..\DATA\Exposé_GPT-3.pdf"
+
 v2 = v1.pdf_view(root,
-                 pdf_location=r"location",
-                 width=50, height=100)
+                 pdf_location=path,
+                 width=100, height=120)
 
 # Placing Pdf in my gui.
 v2.pack()
