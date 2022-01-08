@@ -36,7 +36,10 @@ def summarize(input_text):
         "temperature": 0.3,
     }
 
-    return gpt_request(engine_id, request_body)
+    result = gpt_request(engine_id, request_body)
+    print(result)
+    print(type(result))
+    return
 
 
 def ask_question(input_text, question):

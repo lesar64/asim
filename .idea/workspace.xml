@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6014ff75-9fb9-42fc-8ffa-c973425ce259" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/GUI/gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/gpt_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/gpt_requests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_designer/interface_V2.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_designer/interface_V2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +31,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -52,6 +56,7 @@
       <workItem from="1640451251750" duration="5663000" />
       <workItem from="1641390294803" duration="1659000" />
       <workItem from="1641397439840" duration="1826000" />
+      <workItem from="1641650104490" duration="2651000" />
     </task>
     <servers />
   </component>
@@ -69,5 +74,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

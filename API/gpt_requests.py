@@ -1,6 +1,7 @@
 from tasks import *
 import openai
 
+
 openai.organization = "org-FDLaKQ4DsHmJstN7LGujAHHq"
 openai.api_key = "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"  # API_Key Christian
 

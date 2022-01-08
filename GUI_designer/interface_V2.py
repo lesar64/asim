@@ -16,16 +16,19 @@ from API.tasks import summarize, ask_question, classify_topic, create_quote
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
-        input_phrase = 'Text for testing the API'
 
         Dialog.setObjectName("Dialog")
         Dialog.resize(1160, 871)
         self.TextOutput = QtWidgets.QTextBrowser(Dialog)
         self.TextOutput.setGeometry(QtCore.QRect(590, 200, 550, 650))
         self.TextOutput.setObjectName("TextOutput")
+
+
         self.TextInput = QtWidgets.QTextEdit(Dialog)
         self.TextInput.setGeometry(QtCore.QRect(20, 30, 550, 820))
         self.TextInput.setObjectName("TextInput")
+
+
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(20, 8, 61, 21))
         font = QtGui.QFont()
@@ -57,7 +60,8 @@ class Ui_Dialog(object):
         self.ButtonQuestion.setFont(font)
         self.ButtonQuestion.setObjectName("ButtonQuestion")
         question=input()
-        #self.ButtonQuestion.clicked.connect(ask_question(input_phrase, question))
+        # self.ButtonQuestion.clicked.connect(ask_question(input_phrase, question))
+        self.ButtonQuestion.clicked.connect(lambda: print(self.TextInput.toPlainText()))
 
         # Quote
         self.ButtonQuote = QtWidgets.QPushButton(Dialog)
@@ -79,7 +83,8 @@ class Ui_Dialog(object):
         font.setWeight(50)
         self.ButtonSummary.setFont(font)
         self.ButtonSummary.setObjectName("ButtonSummary")
-        self.ButtonSummary.clicked.connect(lambda: summarize(input_phrase))
+        self.ButtonSummary.clicked.connect(lambda: summarize(self.TextInput.toPlainText()))
+
 
         # Topic
         self.ButtonTopic = QtWidgets.QPushButton(Dialog)
