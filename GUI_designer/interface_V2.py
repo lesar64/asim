@@ -14,6 +14,8 @@ sys.path.append("..")
 from API.tasks import summarize, ask_question, classify_topic, create_quote
 
 
+
+
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
 
@@ -27,6 +29,20 @@ class Ui_Dialog(object):
         self.TextInput = QtWidgets.QTextEdit(Dialog)
         self.TextInput.setGeometry(QtCore.QRect(20, 30, 550, 820))
         self.TextInput.setObjectName("TextInput")
+
+        def update_output(function_type):
+            Input_text = self.TextInput.toPlainText()
+
+            if function_type == 'summarize':
+                result = summarize(Input_text)
+            elif function_type == 'create_quote':
+                result = create_quote(Input_text)
+            elif function_type == 'classify_topic':
+                result = classify_topic(Input_text)
+
+            self.TextOutput.setText(result)
+
+            return
 
 
         self.label = QtWidgets.QLabel(Dialog)
@@ -72,7 +88,7 @@ class Ui_Dialog(object):
         font.setWeight(50)
         self.ButtonQuote.setFont(font)
         self.ButtonQuote.setObjectName("ButtonQuote")
-        #self.ButtonQuote.clicked.connect(create_quote(input_phrase))
+        self.ButtonQuote.clicked.connect(lambda: update_output('create_quote'))
 
         # Summary
         self.ButtonSummary = QtWidgets.QPushButton(Dialog)
@@ -83,7 +99,7 @@ class Ui_Dialog(object):
         font.setWeight(50)
         self.ButtonSummary.setFont(font)
         self.ButtonSummary.setObjectName("ButtonSummary")
-        self.ButtonSummary.clicked.connect(lambda: summarize(self.TextInput.toPlainText()))
+        self.ButtonSummary.clicked.connect(lambda: update_output("summarize"))
 
 
         # Topic
@@ -95,7 +111,7 @@ class Ui_Dialog(object):
         font.setWeight(50)
         self.ButtonTopic.setFont(font)
         self.ButtonTopic.setObjectName("ButtonTopic")
-        #self.ButtonTopic.clicked.connect(classify_topic(input_phrase))
+        self.ButtonTopic.clicked.connect(lambda: update_output('classify_topic'))
 
 
         self.retranslateUi(Dialog)
@@ -110,6 +126,7 @@ class Ui_Dialog(object):
         self.ButtonQuote.setText(_translate("Dialog", "Quote"))
         self.ButtonSummary.setText(_translate("Dialog", "Summary"))
         self.ButtonTopic.setText(_translate("Dialog", "Topic"))
+
 
 
 if __name__ == "__main__":
