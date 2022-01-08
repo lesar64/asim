@@ -9,18 +9,23 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import sys
+sys.path.append("..")
+from API.tasks import summarize, ask_question, classify_topic, create_quote
 
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
+        input_phrase = 'Text for testing the API'
+
         Dialog.setObjectName("Dialog")
         Dialog.resize(1160, 871)
-        self.textBrowser = QtWidgets.QTextBrowser(Dialog)
-        self.textBrowser.setGeometry(QtCore.QRect(590, 200, 550, 650))
-        self.textBrowser.setObjectName("textBrowser")
-        self.textEdit = QtWidgets.QTextEdit(Dialog)
-        self.textEdit.setGeometry(QtCore.QRect(20, 30, 550, 820))
-        self.textEdit.setObjectName("textEdit")
+        self.TextOutput = QtWidgets.QTextBrowser(Dialog)
+        self.TextOutput.setGeometry(QtCore.QRect(590, 200, 550, 650))
+        self.TextOutput.setObjectName("TextOutput")
+        self.TextInput = QtWidgets.QTextEdit(Dialog)
+        self.TextInput.setGeometry(QtCore.QRect(20, 30, 550, 820))
+        self.TextInput.setObjectName("TextInput")
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(20, 8, 61, 21))
         font = QtGui.QFont()
@@ -30,6 +35,8 @@ class Ui_Dialog(object):
         self.label.setFont(font)
         self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label.setObjectName("label")
+
+
         self.label_2 = QtWidgets.QLabel(Dialog)
         self.label_2.setGeometry(QtCore.QRect(590, 170, 81, 31))
         font = QtGui.QFont()
@@ -39,38 +46,52 @@ class Ui_Dialog(object):
         self.label_2.setFont(font)
         self.label_2.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.label_2.setObjectName("label_2")
-        self.pushButton_4 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_4.setGeometry(QtCore.QRect(590, 100, 270, 60))
+
+        # Question
+        self.ButtonQuestion = QtWidgets.QPushButton(Dialog)
+        self.ButtonQuestion.setGeometry(QtCore.QRect(590, 100, 270, 60))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.pushButton_4.setFont(font)
-        self.pushButton_4.setObjectName("pushButton_4")
-        self.pushButton_3 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_3.setGeometry(QtCore.QRect(870, 100, 270, 60))
+        self.ButtonQuestion.setFont(font)
+        self.ButtonQuestion.setObjectName("ButtonQuestion")
+        question=input()
+        #self.ButtonQuestion.clicked.connect(ask_question(input_phrase, question))
+
+        # Quote
+        self.ButtonQuote = QtWidgets.QPushButton(Dialog)
+        self.ButtonQuote.setGeometry(QtCore.QRect(870, 100, 270, 60))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.pushButton_3.setFont(font)
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_5 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_5.setGeometry(QtCore.QRect(590, 30, 270, 60))
+        self.ButtonQuote.setFont(font)
+        self.ButtonQuote.setObjectName("ButtonQuote")
+        #self.ButtonQuote.clicked.connect(create_quote(input_phrase))
+
+        # Summary
+        self.ButtonSummary = QtWidgets.QPushButton(Dialog)
+        self.ButtonSummary.setGeometry(QtCore.QRect(590, 30, 270, 60))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.pushButton_5.setFont(font)
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.pushButton_6 = QtWidgets.QPushButton(Dialog)
-        self.pushButton_6.setGeometry(QtCore.QRect(870, 30, 270, 60))
+        self.ButtonSummary.setFont(font)
+        self.ButtonSummary.setObjectName("ButtonSummary")
+        self.ButtonSummary.clicked.connect(lambda: summarize(input_phrase))
+
+        # Topic
+        self.ButtonTopic = QtWidgets.QPushButton(Dialog)
+        self.ButtonTopic.setGeometry(QtCore.QRect(870, 30, 270, 60))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
         font.setWeight(50)
-        self.pushButton_6.setFont(font)
-        self.pushButton_6.setObjectName("pushButton_6")
+        self.ButtonTopic.setFont(font)
+        self.ButtonTopic.setObjectName("ButtonTopic")
+        #self.ButtonTopic.clicked.connect(classify_topic(input_phrase))
+
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -80,10 +101,10 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.label.setText(_translate("Dialog", "Input"))
         self.label_2.setText(_translate("Dialog", "Output"))
-        self.pushButton_4.setText(_translate("Dialog", "Question"))
-        self.pushButton_3.setText(_translate("Dialog", "Quote"))
-        self.pushButton_5.setText(_translate("Dialog", "Summary"))
-        self.pushButton_6.setText(_translate("Dialog", "Topic"))
+        self.ButtonQuestion.setText(_translate("Dialog", "Question"))
+        self.ButtonQuote.setText(_translate("Dialog", "Quote"))
+        self.ButtonSummary.setText(_translate("Dialog", "Summary"))
+        self.ButtonTopic.setText(_translate("Dialog", "Topic"))
 
 
 if __name__ == "__main__":

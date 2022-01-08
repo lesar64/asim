@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTextBrowser" name="textBrowser">
+  <widget class="QTextBrowser" name="TextOutput">
    <property name="geometry">
     <rect>
      <x>590</x>
@@ -23,7 +23,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="TextInput">
    <property name="geometry">
     <rect>
      <x>20</x>
@@ -79,7 +79,7 @@
     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="ButtonQuestion">
    <property name="geometry">
     <rect>
      <x>590</x>
@@ -99,7 +99,7 @@
     <string>Question</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="ButtonQuote">
    <property name="geometry">
     <rect>
      <x>870</x>
@@ -119,7 +119,7 @@
     <string>Quote</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="ButtonSummary">
    <property name="geometry">
     <rect>
      <x>590</x>
@@ -139,7 +139,7 @@
     <string>Summary</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="ButtonTopic">
    <property name="geometry">
     <rect>
      <x>870</x>
