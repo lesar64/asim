@@ -130,7 +130,7 @@ class Ui_Dialog(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
-        Dialog.setWindowTitle(_translate("Dialog", "GPT-3 supported paper analysis"))
+        Dialog.setWindowTitle(_translate("Dialog", "GPT-3 supported paper readingpython"))
         self.label.setText(_translate("Dialog", "Input"))
         self.label_2.setText(_translate("Dialog", "Output"))
         self.label_3.setText(_translate("Dialog", "Question"))
