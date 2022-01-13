@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6014ff75-9fb9-42fc-8ffa-c973425ce259" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Old/file_import.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/gpt_requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/gpt_requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLLER/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/CONTROLLER/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CONTROLLER/pdf_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/CONTROLLER/pdf_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/GUI/gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/gui_tkinter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/GUI/gui_tkinter_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/pyqt5_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/GUI/pyqt5_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/pyqt_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Old/GUI/pyqt_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_designer/Interface.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Old/GUI/Interface.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_designer/Interface_V2.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Old/GUI/Interface_V2.ui" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_designer/interface_V2.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_designer/interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI_designer/text_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/DATA/text_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATA/pdfminer_approach.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_designer/pdfminer_approach.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_designer/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_designer/interface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +39,10 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Christian\Documents\git\asim\Old" />
+      <recent name="C:\Users\Christian\Documents\git\asim\GUI_designer" />
       <recent name="C:\Users\Christian\Documents\git\asim\DATA" />
       <recent name="C:\Users\Christian\Documents\git\asim\Old\GUI" />
-      <recent name="C:\Users\Christian\Documents\git\asim\Old" />
       <recent name="C:\Users\Christian\Documents\git\asim" />
     </key>
   </component>
@@ -76,6 +68,7 @@
       <workItem from="1641767870326" duration="1198000" />
       <workItem from="1641801463452" duration="695000" />
       <workItem from="1641978387082" duration="2058000" />
+      <workItem from="1642096341183" duration="4530000" />
     </task>
     <servers />
   </component>

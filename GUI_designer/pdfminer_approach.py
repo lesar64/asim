@@ -20,8 +20,5 @@ def convert_pdf_to_string(file_path):
         for page in PDFPage.create_pages(doc):
             interpreter.process_page(page)
 
-    print(output_string.getvalue())
-    return
 
-
-convert_pdf_to_string('Exposé_GPT-3.pdf')
+    return output_string.getvalue()
