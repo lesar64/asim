@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6014ff75-9fb9-42fc-8ffa-c973425ce259" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Old/file_import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATA/pdfminer_approach.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_designer/pdfminer_approach.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI_designer/interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/GUI_designer/interface.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="22JzI4vK8QJt0pQRKDj61b6Bz0K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Christian\Documents\git\asim\Old" />
+      <recent name="C:\Users\Christian\Documents\git\asim\GUI_designer" />
+      <recent name="C:\Users\Christian\Documents\git\asim\DATA" />
+      <recent name="C:\Users\Christian\Documents\git\asim\Old\GUI" />
+      <recent name="C:\Users\Christian\Documents\git\asim" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6014ff75-9fb9-42fc-8ffa-c973425ce259" name="Changes" comment="" />
+      <created>1639570395419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639570395419</updated>
+      <workItem from="1639570398416" duration="2281000" />
+      <workItem from="1640173042367" duration="3365000" />
+      <workItem from="1640451251750" duration="5663000" />
+      <workItem from="1641390294803" duration="1659000" />
+      <workItem from="1641397439840" duration="1826000" />
+      <workItem from="1641650104490" duration="12416000" />
+      <workItem from="1641677924031" duration="603000" />
+      <workItem from="1641726333947" duration="847000" />
+      <workItem from="1641727294745" duration="351000" />
+      <workItem from="1641729261266" duration="3281000" />
+      <workItem from="1641739865336" duration="4733000" />
+      <workItem from="1641767870326" duration="1198000" />
+      <workItem from="1641801463452" duration="695000" />
+      <workItem from="1641978387082" duration="2058000" />
+      <workItem from="1642096341183" duration="4530000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

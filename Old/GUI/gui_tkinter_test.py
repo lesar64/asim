@@ -16,7 +16,7 @@ root.geometry("550x750")
 v1 = pdf.ShowPdf()
 
 # Adding pdf location and width and height.
-path = r"..\DATA\Exposé_GPT-3.pdf"
+path = r"../../DATA/Exposé_GPT-3.pdf"
 
 v2 = v1.pdf_view(root,
                  pdf_location=path,
