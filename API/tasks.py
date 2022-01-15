@@ -1,15 +1,7 @@
 import requests
 
-# Config
-
-# openai.organization = "org-FDLaKQ4DsHmJstN7LGujAHHq"
-# openai.api_key = "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"  # API_Key Christian
-
 auth_header = {'Authorization': 'Bearer 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', # API_Key Jan
                'OpenAI-Organization': 'org-FDLaKQ4DsHmJstN7LGujAHHq'}
-
-# Tasks to fulfill: Summarize, Ask Question, Classify Topic, Create Quote, Explain Code, Create Code,
-# Explain Formula, Code <> Formula (Code to formula; Formula to code)
 
 
 def gpt_request(engine_id, request_body):

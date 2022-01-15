@@ -1,4 +1,4 @@
-#https://towardsdatascience.com/pdf-text-extraction-in-python-5b6ab9e92dd
+# https://towardsdatascience.com/pdf-text-extraction-in-python-5b6ab9e92dd
 from io import StringIO
 
 from pdfminer.converter import TextConverter
@@ -19,6 +19,5 @@ def convert_pdf_to_string(file_path):
         interpreter = PDFPageInterpreter(rsrcmgr, device)
         for page in PDFPage.create_pages(doc):
             interpreter.process_page(page)
-
 
     return output_string.getvalue()

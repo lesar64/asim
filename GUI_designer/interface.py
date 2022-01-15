@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QFileDialog, QWidget
 from pathlib import Path
 sys.path.append("..")
 from API.tasks import summarize, ask_question, classify_topic, create_quote
-from pdfminer_approach import convert_pdf_to_string
+from GUI_designer.pdf_extraction import convert_pdf_to_string
 
 
 class Ui_Dialog(QWidget):
@@ -155,7 +155,7 @@ class Ui_Dialog(QWidget):
         self.ButtonOpenFile.setText(_translate("Dialog", "Import file"))
 
 
-if __name__ == "__main__":
+def run_interface():
     import sys
 
     app = QtWidgets.QApplication(sys.argv)
