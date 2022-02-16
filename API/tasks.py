@@ -81,32 +81,3 @@ def create_quote(input_text):
 
     return gpt_request(engine_id, request_body)
 
-
-def explain_code(query):
-    result = "PLACEHOLDER"
-
-    return result
-
-
-def create_code(query):
-    result = "PLACEHOLDER"
-
-    return result
-
-
-def explain_formula(query):
-    result = "PLACEHOLDER"
-
-    return result
-
-
-def code_to_formula(query):
-    result = "PLACEHOLDER"
-
-    return result
-
-
-def formula_to_code(query):
-    result = "PLACEHOLDER"
-
-    return result
