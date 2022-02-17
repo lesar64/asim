@@ -10,7 +10,10 @@ def gpt_request(engine_id, request_body):
                             json=request_body,
                             headers=auth_header)
 
-    result = request.json()['choices'][0]['text'].lstrip('\n')
+    try:
+        result = request.json()['choices'][0]['text'].lstrip('\n')
+    except:
+        result = request.json()['error']['message']
 
     return result
 
@@ -19,7 +22,8 @@ def summarize(input_text):
 
     prompt = input_text + '\ntl;dr:\n'
     # print(prompt)
-    engine_id = 'davinci-instruct-beta-v3'
+    # engine_id = 'davinci-instruct-beta-v3'
+    engine_id = 'text-davinci-001'
 
     request_body = {
         'prompt': prompt,
@@ -80,4 +84,8 @@ def create_quote(input_text):
     }
 
     return gpt_request(engine_id, request_body)
+
+
+if __name__ == '__main__':
+    print(summarize('Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass one-thousandth that of the Sun, but two-and-a-half times that of all the other planets in the Solar System combined. Jupiter is one of the brightest objects visible to the naked eye in the night sky, and has been known to ancient civilizations since before recorded history. '))
 
