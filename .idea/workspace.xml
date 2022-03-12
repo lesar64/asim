@@ -4,7 +4,6 @@
     <list default="true" id="6014ff75-9fb9-42fc-8ffa-c973425ce259" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/tasks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTEBOOKS/tasks_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NOTEBOOKS/tasks_testing.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Statistics Seminar/Project" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -154,7 +154,11 @@
       <workItem from="1642513596977" duration="1157000" />
       <workItem from="1642543345046" duration="263000" />
       <workItem from="1645025578737" duration="5433000" />
-      <workItem from="1645051307822" duration="1534000" />
+      <workItem from="1645051307822" duration="1911000" />
+      <workItem from="1645802674695" duration="26000" />
+      <workItem from="1646950829887" duration="1937000" />
+      <workItem from="1647001237109" duration="1424000" />
+      <workItem from="1647110027707" duration="864000" />
     </task>
     <task id="LOCAL-00001" summary="Removed unused palceholder functions">
       <created>1645030435930</created>
@@ -163,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645030435930</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Catch bad requests">
+      <created>1645056962911</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645056962911</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,23 +194,13 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Removed unused placeholder functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed unused placeholder functions" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/API/tasks.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Catch bad requests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Catch bad requests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Code$gui.coverage" NAME="gui Coverage Results" MODIFIED="1641566816843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
     <SUITE FILE_PATH="coverage/Code$tasks.coverage" NAME="tasks Coverage Results" MODIFIED="1645031362980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/API" />
-    <SUITE FILE_PATH="coverage/Code$index.coverage" NAME="index Coverage Results" MODIFIED="1645056514273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Code$index.coverage" NAME="index Coverage Results" MODIFIED="1647003605065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Code$interface.coverage" NAME="interface Coverage Results" MODIFIED="1645029976535" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI_designer" />
   </component>
 </project>

@@ -1,7 +1,9 @@
 import requests
 
-auth_header = {'Authorization': 'Bearer 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', # API_Key Jan
-               'OpenAI-Organization': 'org-FDLaKQ4DsHmJstN7LGujAHHq'}
+# Key format: Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxx
+# Organization format: org-xxxxxxxxxx
+auth_header = {'Authorization': 'INSERT_KEY_HERE',
+               'OpenAI-Organization': 'INSERT_ORGANIZATION_HERE'}
 
 
 def gpt_request(engine_id, request_body):

@@ -1,9 +1,10 @@
 from tasks import *
 import openai
 
-
-openai.organization = "org-FDLaKQ4DsHmJstN7LGujAHHq"
-openai.api_key = "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"  # API_Key Christian
+# Key format: Bearer sk-xxxxxxxxxxxxxxxxxxxxxxxxx
+# Organization format: org-xxxxxxxxxx
+openai.organization = 'INSERT_ORGANIZATION_HERE'
+openai.api_key = 'INSERT_KEY_HERE'
 
 
 input_prompt = input("Please enter your input here: ")
